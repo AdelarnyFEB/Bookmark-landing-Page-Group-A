@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,77 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Rubik">
 </head>
+
 <body>
-    <!-- <main class="flex-column"> -->
-    <!-- Section 1 -->
+    <main>
+        <!-- <main class="flex-column"> -->
+        <!-- Section 1 -->
 
-    <nav>
-        <div class="navbar">
-            <div class="nav-logo">
-               <a href="#"><img src="./images/logo-bookmark.svg" alt="logo-bookmark">
-               </a> 
+        <nav>
+            <div class="navbar">
+                <div class="nav-logo">
+                    <div><a href="#" class="bookmark-logo"><img src="./images/logo-bookmark.svg"
+                                alt="logo-bookmark"></a></div>
+                    <div><a href="#" class="hamburger"><img src="./images/icon-hamburger.svg" alt="logo-hamburger"></a>
+                    </div>
+
+                </div>
+                <div class="text">
+                    <ul>
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#" class="login">LOGIN</a></li>
+
+                    </ul>
+                </div>
             </div>
-            <div class="text">
-                <ul>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">PRICING</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">LOGIN</a></li>
-                   
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
 
-    <section class="first-layout">
-        <div class="flex-column">
-            <h1>A Simple Bookmark Manager</h1>
-            <p>A clean and simple interface to organize your favourite websites. Open a new
-                browser tab and see your sites load instantly. Try it for free.</p>
+        <section class="first-layout">
+            <div class="flex-column">
+                <div class="flex-column_b">
+                    <h1>A Simple Bookmark Manager</h1>
+                    <p>A clean and simple interface to organize your favourite websites. Open a new
+                        browser tab and see your sites load instantly. Try it for free.</p>
+                </div>
                 <div class="button">
                     <button class="btn">Get it on Chrome</button>
-                    <button class="btn">Get it on Firefox</button>
+                    <button class="btn special">Get it on Firefox</button>
                 </div>
-        </div>
-        <div class="overlay">
-            <div class="shape"></div>
-            <img class="larny" src="./images/illustration-hero.svg" alt="illustration-hero">
-            
-        </div>
+            </div>
 
-    </section>
-</main>
+            <div class="shape">
+                <img class="larny" src="./images/illustration-hero.svg" alt="illustration-hero">
+            </div>
+
+
+
+        </section>
+
+
+
+        <!--Section 2 (Images and "Bookmark in one click" section)-->
+        <div class="sub-main sub-main_3">
+            <!-- <div class="sub-main_3a">-->
+            <div class="colour-box">
+                <img src="./images/illustration-features-tab-1.svg" class="tab-1">
+            </div>
+
+            <div class="sub-main sub-main_3b">
+                <h1>Bookmark in one click</h1>
+                <p>
+                    Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+                    control
+                    over
+                    how you
+                    manage your favourite sites.
+                </p>
+                <button class="button">More Info</button>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>

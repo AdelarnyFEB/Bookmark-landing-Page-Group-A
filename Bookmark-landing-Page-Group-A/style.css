@@ -1,157 +1,342 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: Rubik;
 }
 
+.text {
+    margin-top: 20px;
+}
 
+h1 {
+font-size: 40px;
+color: hsl(229, 31%, 21%);
+}
+
+p {
+font-size: 18px;
+color: hsl(229, 8%, 60%);
+line-height: 30px;
+}
+.hamburger {
+    display: none;
+}
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
     align-items: center;
     padding: 25px 100px;
 }
+.bookmark-logo {
+position: absolute;
+left: 6%;
+}
+/* ul {
+    width: 4%;
+} */
+
 ul li {
     display: inline-block;
     list-style-type: none;
 }
+
 ul li a {
     text-decoration: none;
     padding: 10px;
-    color:  hsl(229, 31%, 21%);
+    color: hsl(229, 31%, 21%);
+    font-size: 12px;
 }
+
 ul li a:hover {
-    background-color: red;
-    padding: 5px 20px;
-    color: #fff;
-   
-   text-align: center;
+    /* background-color: red; */
+    /* padding: 5px 20px; */
+    color: hsl(0, 94%, 66%);
+    text-align: center;
 }
-
-
-@media only screen and (max-width: 375px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text {
-        margin-top: 20px;
-    }
-
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    ul li {
-        margin: 10px;
-    }
+.login {
+    color: antiquewhite;
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 5px;
+    padding: 10px 20px;
 }
-@media only screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text {
-        margin-top: 20px;
-    }
-
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    ul li {
-        margin: 20px;
-    }
+.login:hover {
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+    background-color: white;
 }
-
-
-
-
-h1{
-    font-size: 40px;
-    color: hsl(229, 31%, 21%);;
+.button {
+    display: flex;
 }
-
-p{
-    font-size: 18px;
-    color: hsl(229, 8%, 60%);
-}
-.first-layout{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
-
-.flex-column{
-    margin: 10em 5em;
+.flex-column {
+    position: relative;
+    left: 2.8%; 
+margin-top: 5em;
     padding: 2em 3em;
+    width: 45%;
     align-items: center;
     gap: 1.8em;
-    grid-area: "Bottom";
 }
-.btn{
+
+.btn {
     cursor: pointer;
     margin: 0.8em 0.8em 0.8em 0;
     border: none;
-    padding: 1em 1.5em;
+    padding: 0.8em 1.5em;
     color: #fff;
     border-radius: 5px;
     background-color: hsl(231, 69%, 60%);
-    font-size: 18px;
+    font-size: 16px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .1);
 }
 
 .btn:hover {
     background-color: #fff;
-    color:black;
+    color: rgba(0, 0, 0, 0.497);
+    border: 2px solid hsl(231, 69%, 60%);
 }
-.shape{
-    width: 500px;
-    height:250px;
+
+.special {
+    background-color: rgba(169, 169, 169, 0.371);
+    color: rgba(0, 0, 0, 0.513);
+}
+.special:hover {
+    border: 2px solid rgba(0, 0, 0, 0.398);
+    color: rgba(0, 0, 0, 0.59);
+}
+
+.shape {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    right: 0px;
+    bottom: 5%;
     background-color: hsl(231, 69%, 60%);
     border-radius: 100px 0px 0px 100px;
 }
 
-.overlay{
+/* .overlay {
+    display: flex;
     margin-top: -7em;
-    position:relative;
-    top:0;
-    left: 0;
-    grid-area: "Top";
-}
+    position: relative;
+    right: 0px;
+    top: 20rem;   
+} */
 
-.larny{
+.larny {
+    height: 130%;
+    width: 120%;
     position: absolute;
-    top: 0px;
-    left: 0px;
-}
-.shape {
-    position:  relative;
-    top: 230px;
-    left:200px;
+    right: 2rem;
+    bottom: 2rem;
 }
 
-@media(max-width: 1000px) {
-    .first-layout{
-        display:flex;
+    
+/* Section 2: (Images and "Bookmark in one click" section)  Starts*/
+.sub-main_3 {
+    display: flex;
+}
+
+.sub-main_3b {
+    width: 32%;
+    position: absolute;
+    right: 10%;
+    top: 50em;
+}
+
+.tab-1 {
+    height: 105%;
+    width: 95%;
+    position: relative;
+    left: 18%;
+    bottom: 26%;
+}
+
+.colour-box {
+    background-color: hsl(231, 69%, 60%);
+    height: 50%;
+    width: 43%;
+    position: absolute;
+    left: 0px;
+    top: 50em;
+    border-bottom-right-radius: 100px;
+}
+
+.sub-main_3b button {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    outline: none;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    padding: 3% 6%;
+    border-radius: 5px;
+}
+
+.sub-main_3b button:hover {
+    background-color: hsl(0, 94%, 66%);
+}
+
+
+
+/* Section 2: (Images and "Bookmark in one click" section)   Ends*/
+
+@media only screen and (max-width: 500px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: px;
+    }
+    .nav-logo {
+        display: flex;
+        justify-content:space-around;
+        gap: 85%;
+    }
+    .bookmark-logo {
+        position: relative;
+    }
+    .hamburger {
+    display: block;
+    }
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        width: 90%;
+    }
+    .flex-column_b{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 140%;
+text-align: center;
+    }
+    .larny {
+        height: 120%;
+        width: 135%;
+        right: 2%;
+        bottom: 2%;
+    }
+    .shape {
+        height: 36%;
+        width: 70%;
+        position: absolute;
+        top: 25%;
+        right: 0px;
+    }
+
+    .text {
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .btn {
+        width: 9.4rem;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 1.1em 1em;
+    }
+    .button {
+        position: relative;
+        left: 8%;
+    }
+
+    /* ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+
+    ul li a{
+        display: none;
+    }
+
+    /* Section 2: (Images and "Bookmark in one click" section)   Start*/
+    
+    .sub-main_3 {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .sub-main_3b {
+        width: 95%;
+        position: absolute;
+        right: 5px;
+        top: 1000px;
+        text-align: center;
+        margin-top: 5%;
+
+    }
+    .tab-1 {
+        height: 100%;
+        width: 95%;
+        left: 30px;
+        bottom: 30px;
+    }
+    
+    .colour-box {
+        height: 36%;
+        width: 90%;
+        position: absolute;
+        top: 48rem;
+        bottom: px;
+    }
+    
+
+    .sub-main_3b button {
+        display: none;
+    }
+
+    /* Section 2: (Images and "Bookmark in one click" section)   End */
+
+}
+
+@media only screen and ((min-width: 500px) and (max-width: 921px)) {
+    ul li a {
+        font-size: 12px;
+    }
+h1 {
+    font-size: 20px;
+}
+p {
+font-size: 14px;
+}
+/* .navbar {
+padding: 25px 100px;
+} */
+ul  {
+    display: flex;
+}
+.btn {
+    width: 9.4rem;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0.4em 3em;
+}
+}
+
+/* @media(max-width: 1000px) {
+    .first-layout {
+        display: flex;
         justify-content: flex-end;
         position: relative;
-        /* flex-wrap: wrap;
-        flex-basis: 100%; */
+        flex-wrap: wrap;
+        flex-basis: 100%;
         text-align: center;
     }
 
-    .flex-column{
+    .flex-column {
         order: 2;
-}
-    .overlay{
+    }
+
+    .overlay {
         order: 1;
     }
-}
+} */
